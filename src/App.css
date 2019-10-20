@@ -6,15 +6,16 @@ html {
   line-height: var(--lh);
   width: 100% !important;
   overflow-x: hidden;
-  background: #2b2b2b;
+  background: linear-gradient(rgba(30, 27, 38, 0.95), rgba(30, 27, 38, 0.95));
+  height: 100%;
 }
 
 body {
   overflow-x: hidden;
+  height: 100%;
 }
 
 #navbar {
-  /* z-index: 3 !important; */
   background-color: #fff !important;
   width: 100% !important;
   position: sticky !important;

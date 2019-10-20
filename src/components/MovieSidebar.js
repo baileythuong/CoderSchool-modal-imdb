@@ -17,6 +17,7 @@ class MovieSidebar extends Component {
         <div className="container-fluid">
           <img style={{ float: "left" }} id="logo" src={logo}></img>
           <h3
+            id="dankMovies"
             style={{
               color: "#2b2b2b",
               paddingTop: "36px",

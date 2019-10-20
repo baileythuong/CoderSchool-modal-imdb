@@ -1,10 +1,12 @@
 import React, { Component } from "react";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav } from "react-bootstrap";
+import logo from "../img/logo.png";
 
 class MainNavBar extends Component {
   render() {
     return (
       <Navbar collapseOnSelect expand="lg" variant="dark">
+        <img style={{}} id="logo2" src={logo}></img>
         <Navbar.Brand href="#home">Dank Movies</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">

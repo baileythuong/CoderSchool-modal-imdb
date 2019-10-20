@@ -110,12 +110,23 @@ body {
   }
 }
 
+@media only screen and (min-width: 639px) {
+  #logo2 {
+    display: none;
+  }
+}
+
 #logo {
   width: 80px;
   margin-left: -46px;
   margin-bottom: 66px;
 }
 
+#logo2 {
+  width: 52px;
+  /* /* margin-left: -46px; */
+  margin-right: -213px;
+}
 #button {
   text-align: center;
   margin-top: -100px;
@@ -581,7 +592,7 @@ section {
 #rangeSlider {
   margin-bottom: 18px !important;
   margin-top: -17px !important;
-  margin-left: 77% !important;
+  margin-left: 78% !important;
 }
 
 #dropdown-basic {

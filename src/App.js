@@ -324,7 +324,7 @@ function App() {
         <MainNavBar />
         <GenreDropdown resetGenres={resetGenres} filterGenres={filterGenres} />
 
-        <div className="row">
+        <div className="row rangeRow">
           <div
             id="rangeSlider"
             className="mx-auto d-flex"

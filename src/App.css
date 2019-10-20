@@ -84,6 +84,7 @@ body {
   .search {
     margin-left: -60px !important;
     max-width: 20px;
+    margin-top: -30px;
   }
 
   .input-group {
@@ -96,7 +97,7 @@ body {
     padding-right: 15px !important;
   }
 
-  .col-md-12 {
+  .rangeRow {
     display: none;
   }
   .dropdown {
@@ -338,14 +339,6 @@ h5 {
 
 .movie-likes {
   float: right;
-
-  /* i {
-      font-size: 14px;
-      margin-right: 4px;
-      position: relative;
-      float: left;
-      line-height: 1;
-    } */
 }
 
 .movie-likes > li {

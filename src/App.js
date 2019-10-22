@@ -22,6 +22,7 @@ function App() {
   const [ratingVal, setRatingVal] = useState({ min: 0, max: 10 });
   const [yearVal, setYearVal] = useState({ min: 1960, max: 2020 });
   const [categories, setCategories] = useState("now_playing");
+  const [videoKey, setVideoKey] = useState(null);
 
   function incrementPageNo() {
     getMovieData();
@@ -269,6 +270,8 @@ function App() {
       const response = await fetch(url);
       const data = await response.json();
       const newTopTwenty = TopTwenty.concat(data.results);
+      // console.log("movie data", newTopTwenty);
+      
       setTopTwenty(newTopTwenty);
       setAllMovies(newTopTwenty);
       setPageNum(pageNum + 1);
@@ -379,7 +382,7 @@ function App() {
         </div>
         <MovieSidebar id="sidebar" getCategories={getCategories}></MovieSidebar>
         <div className="card-container">
-          <div>{TopTwenty && <CardComponent TopTwenty={TopTwenty} />}</div>
+          <div>{TopTwenty && <CardComponent setVideoKey={setVideoKey} TopTwenty={TopTwenty} />}</div>
         </div>
         {categories === "now_playing" && (
           <div id="button">

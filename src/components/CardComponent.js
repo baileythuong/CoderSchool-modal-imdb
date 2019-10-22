@@ -1,5 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Moment from "react-moment";
+import MovieTrailerModal from "../components/MovieTrailerModal";
 
 // import { Div } from "react-bootstrap";
 
@@ -9,6 +10,7 @@ function CardComponent(props) {
   return (
     <div id="allCards" class="row">
       {topMovies.map(movie => {
+
         return (
           <div key={movie.id} class="cellphone-container">
             <div class="movie">
@@ -53,12 +55,9 @@ function CardComponent(props) {
                 </div>
                 <div class="mr-grid action-row">
                   <div class="col2">
-                    <div class="watch-btn">
-                      <h3>
-                        <i class="fa fa-play"></i>
-                        WATCH TRAILER
-                      </h3>
-                    </div>
+                  {
+                   <MovieTrailerModal id={movie.id} />
+                  }
                   </div>
                   <div class="col6 action-btn">
                     <i class="fa fa-save"></i>

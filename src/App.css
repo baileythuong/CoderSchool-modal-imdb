@@ -235,13 +235,13 @@ body {
   font-size: 28px;
 }
 
-.watch-btn {
+/* .watch-btn {
   display: block;
   border: 1px solid #fe4141;
   border-radius: 5px;
   padding: 4px;
   width: 140px;
-}
+} */
 
 .fa-bookmark,
 .fa-share-alt {
